@@ -3,58 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida em Marte</title>
+    <title>Vida em Marte | O Futuro da Humanidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Marte 2080</div>
-            <ul class="nav-links">
+    <header class="header">
+        <div class="logo">MARS<span>LIFE</span></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+        <nav class="nav" id="navMenu">
+            <ul>
                 <li><a href="#visao-geral">Visão Geral</a></li>
                 <li><a href="#habitacao">Habitação</a></li>
                 <li><a href="#alimentacao">Alimentação</a></li>
                 <li><a href="#vestuario">Vestuário</a></li>
             </ul>
+            <button id="themeToggle" class="btn-theme">Alto Contraste</button>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section id="visao-geral" class="card">
-            <h2>Visão Geral do Planeta</h2>
-            <p>[Cole aqui o texto sobre o clima e a paisagem de Marte gerado por IA]</p>
-            <div class="media-container">
-                <div class="placeholder-img">Imagem do Clima / Paisagem</div>
+            <div class="card-content">
+                <h2>Visão Geral do Planeta</h2>
+                <p>Marte é um mundo de extremos congelados e desérticos. Com uma atmosfera fina composta por 95% de dióxido de carbono, o planeta oferece pressões superficiais baixíssimas e temperaturas que variam de 20°C no equador até -125°C nos polos. A paisagem é dominada por tempestades de poeira globais, desfiladeiros gigantescos como o Valles Marineris e vulcões adormecidos como o Olympus Mons. A ausência de um campo magnético forte expõe a superfície a níveis letais de radiação cósmica e solar.</p>
+            </div>
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=800&q=80" alt="Superfície avermelhada de Marte">
             </div>
         </section>
 
         <section id="habitacao" class="card">
-            <h2>Habitação</h2>
-            <p>[Cole aqui o texto sobre cúpulas, impressão 3D e proteção contra radiação]</p>
-            <div class="media-container">
-                <div class="placeholder-img">Imagem das Habitáculos</div>
+            <div class="card-content">
+                <h2>Habitação e Estruturas</h2>
+                <p>Para sobreviver à radiação intensa e às amplitudes térmicas extremas, as colônias humanas não usarão prédios convencionais. As habitações serão construídas em tubos de lava subterrâneos ou através de domos impressos em 3D utilizando o próprio solo marcial (regolito) misturado com polímeros. Essas estruturas contam com camadas duplas de isolamento térmico, sistemas de pressurização contínua e escudos de água ou solo espessos na camada superior para bloquear raios gama e radiação cósmica.</p>
+            </div>
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Conceito de base futurista em Marte">
             </div>
         </section>
 
         <section id="alimentacao" class="card">
-            <h2>Alimentação</h2>
-            <p>[Cole aqui o texto sobre estufas hidroponicas e comida de laboratório]</p>
-            <div class="media-container">
-                <div class="placeholder-img">Imagem da Agricultura Marciana</div>
+            <div class="card-content">
+                <h2>Alimentação e Sustentabilidade</h2>
+                <p>A produção de alimentos em Marte depende inteiramente de ecossistemas fechados. Sem solo fértil natural, a agricultura é realizada em estufas verticais hidroponicas e aeropônicas com iluminação LED otimizada. Cultivos como batata, spirulina, soja e vegetais folhosos fornecem calorias e nutrientes vitais. A proteína animal é substituída por cultivo de carne em laboratório (carne celular) e biatfatos à base de insetos, garantindo eficiência energética e uso mínimo de água reciclada.</p>
+            </div>
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80" alt="Estufa agrícola tecnológica">
             </div>
         </section>
 
         <section id="vestuario" class="card">
-            <h2>Vestuário</h2>
-            <p>[Cole aqui o texto sobre roupas para ambientes internos e trajes espaciais]</p>
-            <div class="media-container">
-                <div class="placeholder-img">Imagem dos Trajes</div>
+            <div class="card-content">
+                <h2>Vestuário e Trajes Espaciais</h2>
+                <p>A vida cotidiana em Marte exige dois guarda-roupas distintos. Para Atividades Extraveiculares (EVA), os colonos utilizam trajes pressurizados leves e flexíveis, equipados com controle térmico ativo, sistemas de oxigênio de emergência e proteção contra poeira abrasiva e radiação. Nos ambientes internos pressurizados, a vestimenta é feita de tecidos sintéticos respiráveis, antimicrobianos e de secagem rápida, projetados para conforto biomecânico e facilidade de higienização.</p>
+            </div>
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=80" alt="Astronauta em traje espacial">
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Projeto Vida em Marte</p>
+    <footer class="footer">
+        <p>&copy; 2026 Projeto Marte - Construindo o Futuro Interplanetário</p>
     </footer>
 
     <script src="script.js"></script>

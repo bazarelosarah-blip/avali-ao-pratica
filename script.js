@@ -1,17 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Rolagem suave ao clicar nos links de navegação
-    const navLinks = document.querySelectorAll(".nav-links a");
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const themeToggle = document.getElementById('themeToggle');
+    const navLinks = document.querySelectorAll('.nav a');
 
+    // Alternar menu mobile
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Alternar modo de Alto Contraste
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('high-contrast');
+    });
+
+    // Rolagem suave e fechar menu ao clicar no link
     navLinks.forEach(link => {
-        link.addEventListener("click", (e) => {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
-            const targetId = link.getAttribute("href");
-            const targetElement = document.querySelector(targetId);
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: "smooth"
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
+            }
+
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
             }
         });
     });
