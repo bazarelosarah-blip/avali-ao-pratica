@@ -1,0 +1,58 @@
+/* ==========================================================================
+   PROJETO ARES - COLONIZAÇÃO DE MARTE (ESTILOS CUSTOMIZADOS)
+   ========================================================================== */
+
+/* Configurações Base do Corpo e Fundo */
+body {
+    background-color: #080506;
+    color: #e5e7eb;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Fundo Estrelado Animado */
+.stars-bg {
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 120px, #ff8866, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+}
+
+/* Efeito de Vidro (Glassmorphism) */
+.glass-panel {
+    background: rgba(24, 17, 20, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(209, 73, 36, 0.25);
+}
+
+.glass-panel:hover {
+    border-color: rgba(255, 87, 34, 0.5);
+    box-shadow: 0 0 25px rgba(209, 73, 36, 0.15);
+}
+
+/* Brilho Atmosférico do Planeta Marte */
+.mars-glow {
+    box-shadow: 0 0 80px 20px rgba(209, 73, 36, 0.35);
+}
+
+/* Personalização da Barra de Rolagem (Scrollbar) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d090a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d14924;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff5722;
+}

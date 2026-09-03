@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Ares - Colonização de Marte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        mars: {
+                            rust: '#d14924',
+                            glow: '#ff5722',
+                            dark: '#0d090a',
+                            surface: '#181114'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="stars-bg min-h-screen flex flex-col justify-between selection:bg-mars-rust selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-mars-rust/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-mars-rust to-red-700 flex items-center justify-center text-white font-bold shadow-lg group-hover:scale-105 transition-transform">
+                    <i data-lucide="globe"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider text-white block leading-none">ARES<span class="text-mars-rust">.GEO</span></span>
+                    <span class="text-[10px] font-mono text-gray-400 tracking-widest uppercase">Missão Marte 2040</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#visao-geral" class="hover:text-mars-rust transition-colors flex items-center gap-1.5"><i data-lucide="compass" class="w-4 h-4"></i> Visão Geral</a>
+                <a href="#habitacao" class="hover:text-mars-rust transition-colors flex items-center gap-1.5"><i data-lucide="home" class="w-4 h-4"></i> Habitação</a>
+                <a href="#alimentacao" class="hover:text-mars-rust transition-colors flex items-center gap-1.5"><i data-lucide="sprout" class="w-4 h-4"></i> Alimentação</a>
+                <a href="#vestuario" class="hover:text-mars-rust transition-colors flex items-center gap-1.5"><i data-lucide="shield" class="w-4 h-4"></i> Vestuário</a>
+                <a href="#ia-assistente" class="px-4 py-2 rounded-full bg-mars-rust/20 border border-mars-rust/50 text-mars-glow hover:bg-mars-rust hover:text-white transition-all flex items-center gap-2">
+                    <i data-lucide="bot" class="w-4 h-4"></i> IA Ares
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-mars-rust/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="#visao-geral" class="block py-2 text-gray-300 hover:text-mars-rust">Visão Geral</a>
+            <a href="#habitacao" class="block py-2 text-gray-300 hover:text-mars-rust">Habitação</a>
+            <a href="#alimentacao" class="block py-2 text-gray-300 hover:text-mars-rust">Alimentação</a>
+            <a href="#vestuario" class="block py-2 text-gray-300 hover:text-mars-rust">Vestuário</a>
+            <a href="#ia-assistente" class="block py-2 text-mars-glow font-bold">Assistente IA Marte</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-16 px-4">
+            <div class="absolute inset-0 z-0 flex items-center justify-center opacity-30 pointer-events-none">
+                <div class="w-[320px] h-[320px] sm:w-[500px] sm:h-[500px] rounded-full bg-gradient-to-tr from-black via-mars-rust to-orange-500 mars-glow animate-pulse"></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border-mars-rust/40 text-mars-glow text-xs sm:text-sm font
